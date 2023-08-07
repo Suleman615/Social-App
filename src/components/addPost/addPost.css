@@ -1,0 +1,78 @@
+.addPost {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.addPostWrapper {
+    padding: 10px;
+}
+
+.addPostTop {
+    display: flex;
+    align-items: center;
+}
+
+.addPostImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.addPostInput {
+    border: none;
+    width: 80%;
+}
+
+.addPostInput:focus {
+    outline: none;
+}
+
+.addPostHr {
+    margin: 20px;
+}
+
+.addPostBottum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addPostOptions {
+    display: flex;
+    margin-left: 20px;
+}
+
+.addPostOption {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+.addPostOptionIcon {
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.addPostOptionText {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.addPostShareButton {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgb(58, 110, 252);
+    font-weight: 500;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}
