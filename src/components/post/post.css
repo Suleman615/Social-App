@@ -1,328 +1,345 @@
-.post {
-    width: 100%;
-    border-radius: 10px;
-    margin: 30px 0px;
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+@media only screen and (max-width: 1400px) {
 
-}
+    .post {
+        width: 100%;
+        border-radius: 10px;
+        margin: 30px 0px;
+        -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 
-.postWrapper {
-    padding: 10px;
-}
+    }
 
-.postTop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .postWrapper {
+        padding: 10px;
+    }
 
-.postTopLeft {
-    display: flex;
-    align-items: center;
-}
+    .postTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.postProfileImage {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+    .postTopLeft {
+        display: flex;
+        align-items: center;
+    }
 
-.postUser {
-    display: flex;
-    flex-direction: column;
-}
+    .postProfileImage {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
-.postUserName {
-    font-size: 15px;
-    margin: 0px 10px;
-    font-weight: 500;
-}
+    .postUser {
+        display: flex;
+        flex-direction: column;
+    }
 
-.postDateTime {
-    font-size: 12px;
-    margin: 0px 10px;
+    .postUserName {
+        font-size: 15px;
+        margin: 0px 10px;
+        font-weight: 500;
+    }
 
-}
+    .postDateTime {
+        font-size: 12px;
+        margin: 0px 10px;
 
-.postMoreOPtion {
-    cursor: pointer;
-}
+    }
 
-.postCenter {
-    margin: 20px 0px;
-}
+    .postMoreOPtion {
+        cursor: pointer;
+    }
 
-.postImage {
-    margin-top: 20px;
-    width: 100%;
-    max-height: 500px;
-    object-fit: contain;
-}
+    .postCenter {
+        margin: 20px 0px;
+    }
 
-.postBottum {
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .postImage {
+        margin-top: 20px;
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+    }
 
-.postBottumLeft {
-    display: flex;
-    align-items: center;
-}
+    .postBottum {
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.ReactedIcon1 {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    color: rgb(255, 215, 0);
-    border-radius: 50%;
-    background-color: white;
-}
+    .postBottumLeft {
+        display: flex;
+        align-items: center;
+    }
 
-.ReactedIcon2 {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    color: blue;
-    margin-left: -8px;
-    z-index: -1;
-}
+    .ReactedIcon1 {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        color: rgb(255, 215, 0);
+        border-radius: 50%;
+        background-color: white;
+    }
 
-.postReactCount {
-    font-size: 12px;
-    margin-left: 5px;
-}
+    .ReactedIcon2 {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        color: blue;
+        margin-left: -8px;
+        z-index: -1;
+    }
 
-.postCommentCount {
-    cursor: pointer;
-    font-size: 12px;
-    border-bottom: 1px dashed grey;
+    .postReactCount {
+        font-size: 12px;
+        margin-left: 5px;
+    }
 
-}
+    .postCommentCount {
+        cursor: pointer;
+        font-size: 12px;
+        border-bottom: 1px dashed grey;
 
-/* .postInteractions {} */
+    }
 
-.postInteractionTop {
-    border-top: 1px solid rgb(192, 190, 190);
-    border-bottom: 1px solid rgb(192, 190, 190);
-    margin: 10px 5px 0 5px;
-    padding: 3px 0;
-    display: flex;
-    justify-content: space-between;
-}
+    /* .postInteractions {} */
 
-.interaction {
-    color: rgb(141, 139, 139);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 8px;
-    flex-grow: 1;
-    border-radius: 5px;
-    padding: 8px 0;
-    cursor: pointer;
-    font-weight: 500;
-    position: relative;
-}
+    .postInteractionTop {
+        border-top: 1px solid rgb(192, 190, 190);
+        border-bottom: 1px solid rgb(192, 190, 190);
+        margin: 10px 5px 0 5px;
+        padding: 3px 0;
+        display: flex;
+        justify-content: space-between;
+    }
 
-
-.postReactionOptions {
-
-    margin-left: 150px;
-    background-color: rgb(194, 189, 189);
-    position: absolute;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    visibility: hidden;
-    animation-fill-mode: forwards;
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-
-}
+    .interaction {
+        color: rgb(141, 139, 139);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 8px;
+        flex-grow: 1;
+        border-radius: 5px;
+        padding: 8px 0;
+        cursor: pointer;
+        font-weight: 500;
+        position: relative;
+    }
 
 
+    .postReactionOptions {
 
-.postLikeOption:hover .postReactionOptions {
-    visibility: visible;
-    animation-name: example;
-    animation-duration: 0.4s;
-}
+        margin-left: 150px;
+        background-color: rgb(194, 189, 189);
+        position: absolute;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+        -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 
-@keyframes example {
-    0% {
-
-
-        top: 0px;
     }
 
 
 
-    100% {
+    .postLikeOption:hover .postReactionOptions {
+        visibility: visible;
+        animation-name: example;
+        animation-duration: 0.4s;
+    }
 
-        top: -50px;
+    @keyframes example {
+        0% {
+
+
+            top: 0px;
+        }
+
+
+
+        100% {
+
+            top: -50px;
+        }
+    }
+
+    .postReactionEmoji {
+        background-color: blue;
+        border-radius: 50%;
+        margin: 5px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .likeEmojiColor {
+        color: rgb(255, 255, 255);
+    }
+
+    .likeEmojiColor2 {
+        color: blue
+    }
+
+    .heartEmojiColor {
+        color: red;
+    }
+
+    .careEmojiColor {
+        color: goldenrod;
+    }
+
+    .hahaEmojiColor {
+        color: goldenrod;
+    }
+
+    .wowEmojiColor {
+        color: goldenrod;
+    }
+
+    .sadEmojiColor {
+        color: goldenrod;
+    }
+
+    .angryEmojiColor {
+        color: rgb(240, 125, 18);
+    }
+
+
+    .postReactionEmoji:hover {
+        padding: 10px;
+        font-size: 25px !important;
+
+
+    }
+
+
+
+    .interaction:hover {
+        background-color: rgb(206, 203, 203);
+    }
+
+    .interactionIcon {
+        margin-right: 5px;
+        font-size: small;
+    }
+
+    .postInteractionCenter {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .postCommentProfileImage {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .postComment {
+        background-color: rgb(190, 186, 186);
+        width: 100%;
+        margin: 0px 10px;
+        padding-right: 5px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+
+    .postCommentInput {
+        flex-grow: 1;
+        margin: 10px;
+        background-color: rgb(190, 186, 186);
+        border: none;
+    }
+
+    .postCommentInput:focus {
+        outline: none;
+        display: block;
+    }
+
+    .PostCommentInsertOptions {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .CommentOptionIcon {
+        color: rgb(104, 102, 102);
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .CommentOptionIcon:hover {
+        background-color: rgb(177, 176, 176);
+        border-radius: 50%;
+    }
+
+    .postINteractionBottum {
+        display: flex;
+        margin-top: 10px;
+
+    }
+
+    .postPublicComment {
+        margin: 0 10px;
+        padding: 10px;
+        background-color: rgb(190, 186, 186);
+        border-radius: 20px;
+    }
+
+    .postPublicCommentText {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .postCommentInteractions {
+        margin: 3px 0 0 25px;
+        padding: 0;
+        font-size: small;
+
+    }
+
+    .postCommentLike,
+    .postCommentReply {
+        margin-right: 10px;
+        font-weight: 700;
+        color: rgb(110, 110, 110);
+    }
+
+    .postCommentShowMore {
+        text-decoration: underline;
+        font-weight: 500;
+        color: rgb(94, 91, 91);
+        cursor: pointer;
+        margin: 20px 0 0 10px;
     }
 }
 
-.postReactionEmoji {
-    background-color: blue;
-    border-radius: 50%;
-    margin: 5px;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media only screen and (max-width: 600px) {
 
+    .postComment {
+        flex-direction: column;
+        align-items: start;
+        border-radius: 10px;
+    }
 
-}
-
-.likeEmojiColor {
-    color: rgb(255, 255, 255);
-}
-
-.likeEmojiColor2 {
-    color: blue
-}
-
-.heartEmojiColor {
-    color: red;
-}
-
-.careEmojiColor {
-    color: goldenrod;
-}
-
-.hahaEmojiColor {
-    color: goldenrod;
-}
-
-.wowEmojiColor {
-    color: goldenrod;
-}
-
-.sadEmojiColor {
-    color: goldenrod;
-}
-
-.angryEmojiColor {
-    color: rgb(240, 125, 18);
-}
-
-
-.postReactionEmoji:hover {
-    padding: 10px;
-    font-size: 25px !important;
-
-
-}
-
-
-
-.interaction:hover {
-    background-color: rgb(206, 203, 203);
-}
-
-.interactionIcon {
-    margin-right: 5px;
-    font-size: small;
-}
-
-.postINteractionCenter {
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.postCommentProfileImage {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.postComment {
-    background-color: rgb(190, 186, 186);
-    width: 100%;
-    margin: 0px 10px;
-    padding-right: 5px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.postCommentInput {
-    flex-grow: 1;
-    margin: 10px;
-    background-color: rgb(190, 186, 186);
-    border: none;
-}
-
-.postCommentInput:focus {
-    outline: none;
-    display: block;
-}
-
-.PostCommentInsertOptions {
-    display: flex;
-    align-items: center;
-
-}
-
-.CommentOptionIcon {
-    color: rgb(104, 102, 102);
-    padding: 5px;
-    cursor: pointer;
-}
-
-.CommentOptionIcon:hover {
-    background-color: rgb(177, 176, 176);
-    border-radius: 50%;
-}
-
-.postINteractionBottum {
-    display: flex;
-    margin-top: 10px;
-
-}
-
-.postPublicComment {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: rgb(190, 186, 186);
-    border-radius: 20px;
-}
-
-.postPublicCommentText {
-    font-size: 15px;
-    margin-top: 5px;
-}
-
-.postCommentInteractions {
-    margin: 3px 0 0 25px;
-    padding: 0;
-    font-size: small;
-
-}
-
-.postCommentLike,
-.postCommentReply {
-    margin-right: 10px;
-    font-weight: 700;
-    color: rgb(110, 110, 110);
-}
-
-.postCommentShowMore {
-    text-decoration: underline;
-    font-weight: 500;
-    color: rgb(94, 91, 91);
-    cursor: pointer;
-    margin: 20px 0 0 10px;
+    .postReactionOptions {
+        margin-left: 240px;
+    }
 }

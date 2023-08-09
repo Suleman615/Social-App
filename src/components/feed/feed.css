@@ -1,12 +1,67 @@
-.feed {
-    flex: 5.5;
+@media only screen and (max-width: 1400px) {
 
+    .feed {
+        flex: 5.5;
+    }
+
+    .feedWrapper {
+        padding: 20px;
+    }
+
+    .messageFriend {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+        padding: 20px 0px;
+        border-radius: 10px;
+    }
+
+    .MessageFriendButton1,
+    .MessageFriendButton2 {
+        padding: 10px;
+        width: 30%;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .MessageFriendButton1 {
+        background-color: #1877f2;
+        color: white;
+    }
+
+    .messageFriendIcon1 {
+        color: white;
+        margin-right: 10px;
+    }
+
+    .messageFriendIcon2 {
+        color: #1877f2;
+        margin-right: 10px;
+    }
+
+    .messageFriendIcon2:hover {
+        color: white !important;
+    }
+
+    .MessageFriendButton2:hover .messageFriendIcon2 {
+        color: white;
+    }
+
+    .MessageFriendButton2:hover {
+        background-color: #1877f2;
+        color: white;
+    }
 
 }
 
+@media only screen and (max-width: 600px) {
 
-
-
-.feedWrapper {
-    padding: 20px;
+    .feed {
+        width: 100%;
+    }
 }

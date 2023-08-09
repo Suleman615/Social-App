@@ -1,14 +1,28 @@
 import './leftbar.css'
-import { RssFeedOutlined, ChatOutlined, PlayCircleOutlined, GroupOutlined, BookmarkBorderOutlined, HelpOutline, WorkOutline, EventOutlined, SchoolOutlined } from "@mui/icons-material"
-import { Users } from '../../dummyData'
-export default function Leftbar() {
-    return (
-        <div className='leftbar'>
+import { AccountCircleOutlined, HomeOutlined, ChatOutlined, PlayCircleOutlined, GroupOutlined, BookmarkBorderOutlined, HelpOutline, WorkOutline, EventOutlined, SchoolOutlined } from "@mui/icons-material"
+import { Friends } from '../../dummyData'
+import { Link } from 'react-router-dom'
+
+
+
+
+export default function Leftbar(props) {
+
+
+
+    const LeftbarSnip = () => {
+        return (
+
             <div className="leftbarWrapper">
+
                 <ul className="leftbarList">
-                    <li className="leftbarListItem">
-                        <RssFeedOutlined className='leftbarListIcon' />
-                        <span className="leftbarItemText">Feed</span>
+                    <li ><Link to="/home" className="leftbarListItem">
+                        <HomeOutlined className='leftbarListIcon' />
+                        <span className="leftbarItemText">Home</span></Link>
+                    </li>
+                    <li ><Link to="/profile" className="leftbarListItem">
+                        <AccountCircleOutlined className='leftbarListIcon' />
+                        <span className="leftbarItemText">Profile</span></Link>
                     </li>
                     <li className="leftbarListItem">
                         <ChatOutlined className='leftbarListIcon' />
@@ -48,7 +62,8 @@ export default function Leftbar() {
                 <button className='leftbarShowMore'>Show More</button>
                 <hr className='leftbarHr' />
                 <ul className="leftbarFriendList">
-                    {Users.map((u) => (
+                    {Friends.map((u) => (u.id === props.user ? "" :
+
                         <li key={u.id} className="leftbarFriend">
                             <img src={u.profilePicture} alt="" className="leftbarFriendImage" />
                             <span className="leftbarFriendNam">{u.userName}</span>
@@ -59,6 +74,32 @@ export default function Leftbar() {
 
                 </ul>
             </div>
-        </div>
+
+        )
+    }
+
+
+    const LeftbarLarge = () => {
+        return (<div className="largeLeftBar">
+            <LeftbarSnip />
+        </div>)
+
+    }
+    const LeftbarSmall = () => {
+        return (
+            <div className="smallLeftBar">
+                <LeftbarSnip />
+            </div>
+        )
+
+    }
+
+
+    return (
+        <>
+            {props.showLogs && <LeftbarSmall />}
+            <LeftbarLarge />
+
+        </>
     )
 }

@@ -1,0 +1,102 @@
+.settings {
+    margin: 60px 10px 0 0;
+    padding: 20px 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+    z-index: 3;
+    background-color: white;
+
+}
+
+.closeSettings {
+    margin: 2px;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+    font-size: 28px !important;
+    right: 0;
+    top: 0;
+    color: gray;
+}
+
+.settingsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    padding: 0%;
+}
+
+.settingsList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.settingsListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.settingsListIcon {
+    margin-right: 10px;
+}
+
+.settingsSeeMore {
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.lineBreak {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(160, 157, 157);
+    border: none;
+    margin: 5px 0;
+}
+
+.helpAndSupport {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px 75px 10px 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+
+}
+
+.helpIcon {
+    margin-right: 10px;
+}
+
+.logOutButton {
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(240, 240, 240);
+}

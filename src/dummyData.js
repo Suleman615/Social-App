@@ -1,50 +1,63 @@
 
-export const currentUsre = {
-    userId: 2,
-    friends: [1, 3, 4, 5, 6, 7, 8, 9]
-}
+// export const currentUsre = {
+//     userId: 99,
+//     friends: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+//     profilePicture: "",
+//     cover: "",
+//     userName: ""
+// }
 
 
-export const Users = [
+export const Friends = [
     {
         id: 1,
         userName: "John Doe",
-        profilePicture: "./assets/profile/p1.jpg"
+        profilePicture: "./assets/profile/p1.jpg",
+        cover: "./assets/cover/p1.jpg"
+
     },
     {
         id: 2,
         userName: "Hira Khan",
-        profilePicture: "./assets/profile/p4.jpg"
+        profilePicture: "./assets/profile/p4.jpg",
+        cover: "./assets/cover/p4.jpg"
+
     },
     {
         id: 3,
         userName: "Imran Ali",
-        profilePicture: "./assets/profile/p8.jpg"
+        profilePicture: "./assets/profile/p8.jpg",
+        cover: "./assets/cover/p8.jpg"
     },
     {
         id: 4,
         userName: "Aleena",
-        profilePicture: "./assets/profile/p3.jpg"
+        profilePicture: "./assets/profile/p3.jpg",
+        cover: "./assets/cover/p3.jpg"
     },
     {
         id: 5,
         userName: "Gullu Butt",
-        profilePicture: "./assets/profile/p5.jpg"
+        profilePicture: "./assets/profile/p5.jpg",
+        cover: "./assets/cover/p5.jpg"
     },
     {
         id: 6,
         userName: "Altaf Baloch",
-        profilePicture: "./assets/profile/p2.jpg"
+        profilePicture: "./assets/profile/p2.jpg",
+        cover: "./assets/cover/p2.jpg"
     },
     {
         id: 7,
         userName: "Madeeha Akhtar",
-        profilePicture: "./assets/profile/p6.jpg"
+        profilePicture: "./assets/profile/p6.jpg",
+        cover: "./assets/cover/p6.jpg"
     },
     {
         id: 8,
         userName: "Sadia Tariq",
-        profilePicture: "./assets/profile/p7.jpg"
+        profilePicture: "./assets/profile/p7.jpg",
+        cover: "./assets/cover/p7.jpg"
     }
 
 ];

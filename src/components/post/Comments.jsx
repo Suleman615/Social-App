@@ -1,15 +1,15 @@
-import { Users } from "../../dummyData"
+import { Friends } from "../../dummyData"
 
 export default function Comments(com) {
     let comment = com.comment
     return (
         <>
             <div className="postINteractionBottum">
-                <img src={Users.filter((u) => u.id === comment.userId)[0].profilePicture} alt="" className="postCommentProfileImage" />
+                <img src={Friends.filter((u) => u.id === comment.userId)[0].profilePicture} alt="" className="postCommentProfileImage" />
                 <div>
                     <div className='postPublicComment'>
 
-                        <h4 className="postCommentUserName">{Users.filter((u) => u.id === comment.userId)[0].userName}</h4>
+                        <h4 className="postCommentUserName">{Friends.filter((u) => u.id === comment.userId)[0].userName}</h4>
                         <p className="postPublicCommentText">{comment.text}</p>
 
 

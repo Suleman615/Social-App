@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './post.css'
-import { MoreVert, EmojiEmotions, ThumbUp, ChatBubbleOutlineOutlined, ReplyOutlined, SentimentSatisfiedOutlined, AccountCircleOutlined, GifBoxOutlined, StickyNote2Outlined, Comment } from "@mui/icons-material"
-import { Users } from '../../dummyData'
+import { MoreVert, EmojiEmotions, ThumbUp, ChatBubbleOutlineOutlined, ReplyOutlined, SentimentSatisfiedOutlined, AccountCircleOutlined, GifBoxOutlined, StickyNote2Outlined } from "@mui/icons-material"
+import { Friends } from '../../dummyData'
 import Comments from './Comments'
 
 
@@ -12,8 +12,6 @@ import Comments from './Comments'
 
 
 export default function Post({ post }) {
-
-
 
     const emojis = {
         like: "fas fa-thumbs-up fa-2xl likeEmojiColor2",
@@ -69,9 +67,9 @@ export default function Post({ post }) {
             <div className="postWrapper">
                 <div className="postTop">
                     <div className="postTopLeft">
-                        <img src={Users.filter((u) => u.id === post.userId)[0].profilePicture} alt="..?" className="postProfileImage" />
+                        <img src={Friends.filter((u) => u.id === post.userId)[0].profilePicture} alt="..?" className="postProfileImage" />
                         <span className='PostUser'>
-                            <p className="postUserName">{Users.filter((u) => u.id === post.userId)[0].userName}</p>
+                            <p className="postUserName">{Friends.filter((u) => u.id === post.userId)[0].userName}</p>
                             <p className="postDateTime">{post.date}</p>
                         </span>
 
@@ -112,7 +110,7 @@ export default function Post({ post }) {
                         <span className=" interaction"> <ChatBubbleOutlineOutlined className='interactionIcon' />Comment</span>
                         <span className=" interaction">< ReplyOutlined className='interactionIcon' />Share</span>
                     </div>
-                    <div className="postINteractionCenter">
+                    <div className="postInteractionCenter">
                         <img src="./assets/profile/p6.jpg" alt="" className="postCommentProfileImage" />
                         <span className='postComment'>
                             <input placeholder='Write a comment...' className="postCommentInput" />

@@ -1,10 +1,13 @@
 import './rightbar.css'
-import { Users } from '../../dummyData'
+import { Friends } from '../../dummyData'
+import { currentUser } from '../../pages/home/Home'
 
 
 
 
-export default function Rightbar({ profile }) {
+export default function Rightbar(props) {
+    let profile = props.profile
+    let user = props.user
     const HomeRighbar = () => {
         return (
             <>
@@ -16,7 +19,7 @@ export default function Rightbar({ profile }) {
                 <h4 className="rightbarTitle">Online Friends</h4>
 
                 <ul className="rightbarFriendList">
-                    {Users.map((u) => (
+                    {Friends.map((u) => ((u.id === currentUser) ? "" :
                         <li key={u.id} className="rightbarFriend">
                             <div className="rightbarProfileContainer">
                                 <img src={u.profilePicture} alt="" className="rightbarProfileImage" />
@@ -52,8 +55,8 @@ export default function Rightbar({ profile }) {
                 </div>
                 <h4 className='rightbarTitle'>User Friends</h4>
                 <div className="rightbarFollowings">
-                    {Users.map((p) => (
-                        <div key={p.id} className="rightbarFollowing">
+                    {Friends.map((p) => (p.id === user ? "" :
+                        <div onClick={() => { props.setUser(p.id) }} key={p.id} className="rightbarFollowing">
                             <img src={p.profilePicture} alt="" className="rigntbarFollowingImage" />
                             <span className="rightbarFollowingName">{p.userName}</span>
                         </div>
@@ -66,12 +69,33 @@ export default function Rightbar({ profile }) {
         )
     }
 
-    return (
-        <div className='rightbar'>
-            <div className="rightbarWrapper">
-                {profile ? <ProfileRightbar /> : <HomeRighbar />}
-            </div>
 
-        </div>
+    const RightbarLarge = () => {
+        return (
+            <div className="rightbarLarge">
+                <div className="rightbarWrapper">
+                    {profile ? <ProfileRightbar /> : <HomeRighbar />}
+                </div>
+            </div>
+        )
+    }
+
+    const RightbarSmall = () => {
+        return (
+            <div className="rightbarSmall">
+                <div className="rightbarWrapper">
+                    {profile ? <ProfileRightbar /> : <HomeRighbar />}
+                </div>
+            </div>
+        )
+    }
+    return (
+        <>
+            {
+                props.showChats && <RightbarSmall />
+            }
+            <RightbarLarge />
+        </>
+
     )
 }

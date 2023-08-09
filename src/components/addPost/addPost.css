@@ -45,20 +45,26 @@
 
 .addPostOptions {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 20px;
+}
+
+.addPostOPtionsFirst {
+    display: flex;
+
 }
 
 .addPostOption {
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    margin: 2px 15px 0 0;
     cursor: pointer;
 }
 
 
 .addPostOptionIcon {
     font-size: 18px;
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
 .addPostOptionText {
