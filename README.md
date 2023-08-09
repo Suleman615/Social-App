@@ -1,6 +1,6 @@
-#Credentials
+# Credential
 
-Username: user@gnmail.com
+Username: user@gnmail.com\
 Password: 1234
 
 
